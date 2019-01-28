@@ -1,0 +1,17 @@
+<%= form_for(@piece, multipart: true) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :img %>
+    <%= f.file_field :img %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>
